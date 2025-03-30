@@ -5,7 +5,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 
 
 // Middleware
@@ -81,5 +81,5 @@ app.post("/api/datos", async (req, res) => {
 
 // 📌 Iniciar el servidor
 app.listen(port, () => {
-  console.log(`🚀 Servidor ejecutándose en http://localhost:${port}`);
+  console.log(`🚀 Servidor ejecutándose en el puerto ${port}`);
 });
